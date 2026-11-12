@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Saldana — Senior Full Stack & AI Engineer</title>
+<meta name="description" content="Senior Full Stack & AI Engineer building reliable web platforms, LLM integrations, RAG and agent-based workflows. Based in Chihuahua, Mexico.">
+<meta property="og:title" content="Daniel Saldana — Senior Full Stack & AI Engineer">
+<meta property="og:description" content="Web platforms, LLM integrations, RAG and agentic workflows — built end to end.">
+<meta property="og:image" content="assets/daniel.jpg">
+<meta name="theme-color" content="#f0ebe0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23c4532d'/%3E%3Ctext x='32' y='44' font-size='30' text-anchor='middle' fill='%23f0ebe0' font-family='Georgia' font-style='italic'%3Eds%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- Background canvas + grain -->
+<canvas id="flow" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="Home">ds<span class="accent">.</span></a>
+  <nav class="nav__links" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme-btn" class="theme-btn" aria-label="Toggle dark mode"><span></span></button>
+</header>
+
+<!-- ═══════════════════════ HERO ══════════════════════════ -->
+<section class="hero" id="top" aria-label="Introduction">
+  <div class="hero__inner">
+
+    <div class="hero__left">
+      <p class="hero__pill">
+        <span class="dot-pulse" aria-hidden="true"></span>
+        Available for new opportunities
+      </p>
+
+      <h1 class="hero__name">
+        <span class="hero__line"><span class="hero__line-inner">Daniel</span></span>
+        <span class="hero__line hero__line--em"><span class="hero__line-inner">Saldana</span></span>
+        <span class="hero__line"><span class="hero__line-inner">Gutierrez</span></span>
+      </h1>
+
+      <p class="hero__title reveal-up">Senior Full Stack &amp; AI Engineer</p>
+      <p class="hero__sub reveal-up">Building dependable web platforms and turning language models into <em>real-world products</em> — end to end.</p>
+
+      <div class="hero__cta reveal-up">
+        <a class="btn btn--primary" href="#contact">Let's talk <span class="btn-arrow">→</span></a>
+        <a class="btn btn--ghost" href="#work">Selected work</a>
+      </div>
+    </div>
+
+    <div class="hero__right reveal-up" aria-hidden="true">
+      <div class="hero__portrait-wrap">
+        <div class="hero__deco-bg">DS</div>
+        <figure class="hero__portrait">
+          <img src="assets/daniel.jpg" alt="Portrait of Daniel Saldana Gutierrez" width="400" height="400" fetchpriority="high">
+        </figure>
+        <div class="hero__tag hero__tag--1">
+          <span class="tag-label">Based in</span>
+          Chihuahua, MX
+        </div>
+        <div class="hero__tag hero__tag--2">
+          <span class="tag-label">Open to</span>
+          Remote Work
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__stats reveal-up">
+    <div class="hero__stat">
+      <strong>10<span class="accent">+</span></strong>
+      <span>Years shipping<br>software</span>
+    </div>
+    <div class="hero__stat-sep" aria-hidden="true"></div>
+    <div class="hero__stat">
+      <strong>4</strong>
+      <span>Companies<br>worked with</span>
+    </div>
+    <div class="hero__stat-sep" aria-hidden="true"></div>
+    <div class="hero__stat">
+      <strong>3</strong>
+      <span>AI products<br>built</span>
+    </div>
+    <div class="hero__stat-sep" aria-hidden="true"></div>
+    <div class="hero__stat">
+      <strong>M.Sc.</strong>
+      <span>Computer<br>Science</span>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#about" aria-label="Scroll to about section">scroll</a>
+</section>
+
+<!-- ═══════════════════════ MARQUEE ══════════════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>React</span><i>·</i><span>Next.js</span><i>·</i><span>TypeScript</span><i>·</i>
+    <span>Node.js</span><i>·</i><span>Python</span><i>·</i><span>LLMs</span><i>·</i>
+    <span>RAG</span><i>·</i><span>AI Agents</span><i>·</i><span>Azure AI Foundry</span><i>·</i>
+    <span>OpenAI API</span><i>·</i><span>AWS Lambda</span><i>·</i><span>GraphQL</span><i>·</i>
+    <span>PostgreSQL</span><i>·</i><span>Elasticsearch</span><i>·</i><span>Docker</span><i>·</i>
+    <span>Tailwind CSS</span><i>·</i><span>Redux</span><i>·</i><span>DynamoDB</span><i>·</i>
+    <!-- duplicate for seamless loop -->
+    <span>React</span><i>·</i><span>Next.js</span><i>·</i><span>TypeScript</span><i>·</i>
+    <span>Node.js</span><i>·</i><span>Python</span><i>·</i><span>LLMs</span><i>·</i>
+    <span>RAG</span><i>·</i><span>AI Agents</span><i>·</i><span>Azure AI Foundry</span><i>·</i>
+    <span>OpenAI API</span><i>·</i><span>AWS Lambda</span><i>·</i><span>GraphQL</span><i>·</i>
+    <span>PostgreSQL</span><i>·</i><span>Elasticsearch</span><i>·</i><span>Docker</span><i>·</i>
+    <span>Tailwind CSS</span><i>·</i><span>Redux</span><i>·</i><span>DynamoDB</span><i>·</i>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ABOUT ════════════════════════ -->
+<section class="section about" id="about">
+  <p class="section__label reveal-up">01 — About</p>
+  <div class="about__grid">
+
+    <div class="about__portrait reveal-up">
+      <figure>
+        <img src="assets/daniel.jpg" alt="Daniel Saldana Gutierrez" width="400" height="400" loading="lazy">
+        <figcaption>
+          <span>dsaldanadev@gmail.com</span>
+          <span>Chihuahua, Mexico</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="about__text">
+      <h2 class="about__heading reveal-up">
+        I build software<br><em>end to end.</em>
+      </h2>
+      <p class="reveal-up">My work spans React, Next.js, Node.js, Python and the cloud, with recent focus on integrating large language models, retrieval-augmented generation and agent-based workflows into practical applications.</p>
+      <p class="reveal-up">I value maintainable code, clear communication, and solutions that are reliable, useful and ready for the real world. I've also stepped up as interim lead, mentoring junior developers and delivering major features on schedule.</p>
+      <blockquote class="about__quote reveal-up">
+        "An end-to-end mindset — from understanding product requirements and shaping technical approaches, to implementation, testing, and ongoing improvement."
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ EXPERTISE ════════════════════ -->
+<section class="section expertise">
+  <p class="section__label reveal-up">02 — What I build</p>
+  <div class="expertise__grid">
+    <div class="expertise__card reveal-up">
+      <div class="expertise__num">01</div>
+      <div class="expertise__icon" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.2"/><path d="M12 20h16M20 12l8 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>AI &amp; LLM Systems</h3>
+      <p>LLM integration, RAG pipelines, agentic workflows, and AI product architecture — turning language models into reliable, production-ready features.</p>
+      <div class="expertise__tags"><span>LLMs</span><span>RAG</span><span>Agents</span><span>Azure AI</span></div>
+    </div>
+    <div class="expertise__card reveal-up">
+      <div class="expertise__num">02</div>
+      <div class="expertise__icon" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.2"/><path d="M14 20l-4 4 4 4M26 20l4 4-4 4M22 16l-4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Full Stack Platforms</h3>
+      <p>End-to-end web applications with React, Next.js and Node.js backends — built for performance, maintainability and real-world scale.</p>
+      <div class="expertise__tags"><span>React</span><span>Next.js</span><span>Node.js</span><span>TypeScript</span></div>
+    </div>
+    <div class="expertise__card reveal-up">
+      <div class="expertise__num">03</div>
+      <div class="expertise__icon" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 6L6 14v12l14 8 14-8V14L20 6z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M20 6v24M6 14l14 8 14-8" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Cloud Architecture</h3>
+      <p>AWS and Azure infrastructure, serverless functions, CI/CD pipelines and secure file workflows — production quality from day one.</p>
+      <div class="expertise__tags"><span>AWS</span><span>Azure</span><span>Docker</span><span>CI/CD</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WORK ═════════════════════════ -->
+<section class="section work" id="work">
+  <p class="section__label reveal-up">03 — Selected Work</p>
+
+  <!-- Project 01 — Agentiiv -->
+  <article class="project reveal-up">
+    <div class="project__meta">
+      <span class="project__num" aria-hidden="true">01</span>
+      <div class="project__info">
+        <p class="project__kind">Enterprise AI · Multi-agent · 100+ Agents</p>
+        <h3>Agentiiv</h3>
+        <p>Contributed frontend development and selected backend work for an enterprise AI platform that deploys specialized agents to automate work across departments. The platform transforms raw data into client-ready deliverables through 100+ domain-specific AI workers — from research and sales to competitive analysis — with full-stack observability, PII detection, and SOC 2 Type II security. Clients include Arthritis Society Canada, Bruce Power, TSX and Medtronic.</p>
+        <ul class="project__tags" aria-label="Technologies used">
+          <li>React</li><li>Node.js</li><li>LLM integrations</li><li>Multi-model</li><li>Claude</li><li>Gemini</li>
+        </ul>
+        <a href="https://agentiiv.com" target="_blank" rel="noopener" class="project__link">Visit site ↗</a>
+      </div>
+    </div>
+    <div class="project__art browser-frame" aria-hidden="true">
+      <div class="browser-chrome">
+        <div class="browser-dots"><span></span><span></span><span></span></div>
+        <div class="browser-bar">agentiiv.com</div>
+      </div>
+      <div class="browser-content">
+        <img src="https://image.thum.io/get/width/1200/crop/900/noanimate/https://agentiiv.com/"
+             alt="Agentiiv platform homepage" loading="lazy"
+             onload="this.closest('.browser-content').classList.add('loaded')">
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 02 — Simmie -->
+  <article class="project project--flip reveal-up">
+    <div class="project__art browser-frame" aria-hidden="true">
+      <div class="browser-chrome">
+        <div class="browser-dots"><span></span><span></span><span></span></div>
+        <div class="browser-bar">simmie.ai</div>
+      </div>
+      <div class="browser-content">
+        <img src="https://image.thum.io/get/width/1200/crop/900/noanimate/https://www.simmie.ai/"
+             alt="Simmie AI coaching platform homepage" loading="lazy"
+             onload="this.closest('.browser-content').classList.add('loaded')">
+      </div>
+    </div>
+    <div class="project__meta">
+      <span class="project__num" aria-hidden="true">02</span>
+      <div class="project__info">
+        <p class="project__kind">AI Sales Coaching · LLMs · 40+ Languages</p>
+        <h3>Simmie</h3>
+        <p>Contributed to a live AI product that lets sales professionals practice realistic conversations with AI buyers before engaging real prospects. Worked across frontend delivery and selected backend tasks — integrating LLM capabilities and agentic workflows into the platform's roleplay simulations, real-time coaching cues, post-call scoring, and manager dashboards. Ramps reps up to 40% faster across financial services, insurance and real estate.</p>
+        <ul class="project__tags" aria-label="Technologies used">
+          <li>React</li><li>Node.js</li><li>LLMs</li><li>Agentic systems</li><li>ChatGPT</li><li>Claude</li>
+        </ul>
+        <a href="https://www.simmie.ai" target="_blank" rel="noopener" class="project__link">Visit site ↗</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 03 — OMAI Chatbot -->
+  <article class="project reveal-up">
+    <div class="project__meta">
+      <span class="project__num" aria-hidden="true">03</span>
+      <div class="project__info">
+        <p class="project__kind">Azure AI · RAG · Internal Tool</p>
+        <h3>OMAI Chatbot</h3>
+        <p>Designed the core logic and architecture of an internal insurance chatbot — connecting a React interface and Node.js backend to Azure AI Foundry and Cosmos DB. Implemented a RAG workflow over medical coverage data so staff can query plan details in plain language, with chat-history upload to Blob Storage, JSON log export, and a mobile-first auth and chat experience used exclusively by company members.</p>
+        <ul class="project__tags" aria-label="Technologies used">
+          <li>React</li><li>Node.js</li><li>Azure AI Foundry</li><li>Cosmos DB</li><li>RAG</li><li>Blob Storage</li>
+        </ul>
+        <span class="project__private">🔒 Internal tool — no public URL</span>
+      </div>
+    </div>
+    <!-- CSS chatbot mockup instead of a gradient art panel -->
+    <div class="project__art a3 chatbot-art" aria-hidden="true">
+      <div class="chat-mock">
+        <div class="chat-mock__header">
+          <span class="chat-mock__dot"></span>
+          <span class="chat-mock__dot"></span>
+          <span class="chat-mock__dot"></span>
+          <span class="chat-mock__title">OMAI Insurance Assistant</span>
+          <span class="chat-mock__badge">RAG</span>
+        </div>
+        <div class="chat-mock__body">
+          <div class="chat-mock__msg chat-mock__msg--bot">
+            <div class="chat-mock__bubble">Hello! I can help with coverage questions. What would you like to know?</div>
+          </div>
+          <div class="chat-mock__rag">
+            <span class="chat-mock__rag-dot"></span> Searching medical coverage database…
+          </div>
+          <div class="chat-mock__msg chat-mock__msg--user">
+            <div class="chat-mock__bubble">What does Plan B cover for specialists?</div>
+          </div>
+          <div class="chat-mock__msg chat-mock__msg--bot">
+            <div class="chat-mock__bubble">Plan B covers specialist visits up to $50K/year, including surgery, diagnostics and hospitalization. Dental and vision add-ons available.</div>
+          </div>
+          <div class="chat-mock__msg chat-mock__msg--user">
+            <div class="chat-mock__bubble">Can dependents be added?</div>
+          </div>
+          <div class="chat-mock__typing">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="chat-mock__input">
+          <span>Ask about your coverage…</span>
+          <button class="chat-mock__send" tabindex="-1" aria-hidden="true">↑</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 04 — Easy Street Offers -->
+  <article class="project project--flip reveal-up">
+    <div class="project__art browser-frame" aria-hidden="true">
+      <div class="browser-chrome">
+        <div class="browser-dots"><span></span><span></span><span></span></div>
+        <div class="browser-bar">easystreetoffers.com</div>
+      </div>
+      <div class="browser-content">
+        <img src="https://image.thum.io/get/width/1200/crop/900/noanimate/https://www.easystreetoffers.com/"
+             alt="Easy Street Offers homepage" loading="lazy"
+             onload="this.closest('.browser-content').classList.add('loaded')">
+      </div>
+    </div>
+    <div class="project__meta">
+      <span class="project__num" aria-hidden="true">04</span>
+      <div class="project__info">
+        <p class="project__kind">PropTech · Real Estate · Marketplace</p>
+        <h3>Easy Street Offers</h3>
+        <p>Contributed to the operating system for residential investment real estate — an intelligent marketplace connecting every property to real buyer demand, instantly. The platform processes inventory from agents, wholesalers, MLS listings and builders through an automated engine that generates instant offer ranges, scores and routes opportunities to 5,000+ active investors across all U.S. states, with $12.4M+ in live deal flow. Served agents, institutional brokerages (Keller Williams, RE/MAX, Coldwell Banker), family offices and wholesalers.</p>
+        <ul class="project__tags" aria-label="Technologies used">
+          <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>AWS</li><li>REST APIs</li><li>TypeScript</li>
+        </ul>
+        <a href="https://www.easystreetoffers.com" target="_blank" rel="noopener" class="project__link">Visit site ↗</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ═══════════════════════ STATS ═════════════════════════ -->
+<div class="stats" role="region" aria-label="Career highlights">
+  <div class="stats__inner">
+    <div class="stat reveal-up">
+      <strong><span class="count" data-to="10" data-suffix="+">0+</span></strong>
+      <span>Years shipping<br>software</span>
+    </div>
+    <div class="stat reveal-up">
+      <strong><span class="count" data-to="4">0</span></strong>
+      <span>Companies<br>worked with</span>
+    </div>
+    <div class="stat reveal-up">
+      <strong><span class="count" data-to="3">0</span></strong>
+      <span>AI products<br>built</span>
+    </div>
+    <div class="stat reveal-up">
+      <strong><span class="count" data-to="2">0</span></strong>
+      <span>University<br>degrees</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ EXPERIENCE ═══════════════════ -->
+<section class="section" id="experience">
+  <p class="section__label reveal-up">04 — Experience</p>
+  <ol class="timeline">
+    <li class="timeline__item reveal-up">
+      <div class="timeline__year" aria-label="June 2022 to present">
+        <span>2022</span><span class="timeline__year-end">Present</span>
+      </div>
+      <div class="timeline__body">
+        <h3>Data Analyst · Research Assistant</h3>
+        <p class="timeline__co">Caby — Chihuahua, Mexico</p>
+        <p>Contribute to a high-traffic software reviews platform (React, AWS Lambda, Elasticsearch, Rails, DynamoDB). Monitor production behavior, refactor callback flows to async/await, enrich Rollbar diagnostics, and design Elasticsearch indexes from internal datasets and Kafka topics. Served as interim lead for six weeks, mentoring two juniors and delivering two major features on schedule.</p>
+        <div class="timeline__tags">
+          <span>React</span><span>AWS Lambda</span><span>Elasticsearch</span>
+          <span>DynamoDB</span><span>Next.js</span><span>Kafka</span>
+        </div>
+      </div>
+    </li>
+    <li class="timeline__item reveal-up">
+      <div class="timeline__year" aria-label="January 2021 to May 2022">
+        <span>2021</span><span class="timeline__year-end">2022</span>
+      </div>
+      <div class="timeline__body">
+        <h3>Senior Software Engineer</h3>
+        <p class="timeline__co">Solarview — Dallas, TX, USA</p>
+        <p>Built AWS resource import flows, resolved performance bottlenecks in a Phoenix/Absinthe GraphQL backend, rebuilt a cloud bundle management UI in Next.js, and implemented pre-signed S3 URL workflows with role-based authorization for a secure legal file-sharing platform.</p>
+        <div class="timeline__tags">
+          <span>Next.js</span><span>GraphQL</span><span>Node.js</span>
+          <span>AWS S3</span><span>PostgreSQL</span><span>Phoenix</span>
+        </div>
+      </div>
+    </li>
+    <li class="timeline__item reveal-up">
+      <div class="timeline__year" aria-label="June 2017 to December 2020">
+        <span>2017</span><span class="timeline__year-end">2020</span>
+      </div>
+      <div class="timeline__body">
+        <h3>Full Stack Developer</h3>
+        <p class="timeline__co">Tesla — Mexico City, Mexico</p>
+        <p>Built reusable patterns reducing duplication across the codebase, fixed a high-priority defect blocking a major release, shipped applications from scratch including a secure Passport/Express auth flow, and expanded ML skills through TensorFlow projects.</p>
+        <div class="timeline__tags">
+          <span>React</span><span>Node.js</span><span>TensorFlow</span>
+          <span>Express</span><span>Passport</span>
+        </div>
+      </div>
+    </li>
+    <li class="timeline__item reveal-up">
+      <div class="timeline__year" aria-label="June 2015 to May 2017">
+        <span>2015</span><span class="timeline__year-end">2017</span>
+      </div>
+      <div class="timeline__body">
+        <h3>Full Stack Engineer</h3>
+        <p class="timeline__co">Konfio — Mexico City, Mexico</p>
+        <p>Designed a portal for out-of-school teachers to find audiences and share educational content. Built a social-network data parser (Node.js, TypeScript, PostgreSQL) and migrated a legacy React parental-control app toward TypeScript and Next.js.</p>
+        <div class="timeline__tags">
+          <span>Node.js</span><span>TypeScript</span><span>Next.js</span>
+          <span>PostgreSQL</span><span>React</span>
+        </div>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ═══════════════════════ SKILLS ════════════════════════ -->
+<section class="section skills" id="skills">
+  <p class="section__label reveal-up">05 — Toolkit</p>
+  <div class="skills__grid">
+    <div class="skills__cat reveal-up">
+      <h4><span class="skills__num">01</span>AI &amp; LLM</h4>
+      <div class="skills__pills">
+        <span>Generative AI</span><span>LLM Integration</span><span>RAG</span>
+        <span>AI Agents</span><span>Prompt Engineering</span>
+        <span>Workflow Automation</span><span>Azure AI Foundry</span><span>OpenAI API</span>
+      </div>
+    </div>
+    <div class="skills__cat reveal-up">
+      <h4><span class="skills__num">02</span>Frontend</h4>
+      <div class="skills__pills">
+        <span>React</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span>
+        <span>Tailwind CSS</span><span>Redux</span><span>HTML</span><span>CSS</span>
+      </div>
+    </div>
+    <div class="skills__cat reveal-up">
+      <h4><span class="skills__num">03</span>Backend &amp; APIs</h4>
+      <div class="skills__pills">
+        <span>Node.js</span><span>Express</span><span>REST APIs</span>
+        <span>GraphQL</span><span>Python</span><span>Django</span><span>Ruby on Rails</span>
+      </div>
+    </div>
+    <div class="skills__cat reveal-up">
+      <h4><span class="skills__num">04</span>Cloud &amp; DevOps</h4>
+      <div class="skills__pills">
+        <span>AWS</span><span>Azure</span><span>Docker</span><span>CI/CD</span>
+        <span>Lambda</span><span>S3</span><span>Serverless</span><span>Git</span>
+      </div>
+    </div>
+    <div class="skills__cat reveal-up">
+      <h4><span class="skills__num">05</span>Data &amp; Storage</h4>
+      <div class="skills__pills">
+        <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>DynamoDB</span>
+        <span>Elasticsearch</span><span>Cosmos DB</span><span>Blob Storage</span>
+      </div>
+    </div>
+    <div class="skills__cat reveal-up">
+      <h4><span class="skills__num">06</span>Education</h4>
+      <div class="skills__edu">
+        <div class="skills__degree">
+          <strong>M.Sc. Computer Science</strong>
+          <span>Universidad Tecnológica de Chihuahua</span>
+          <span class="skills__year">2017 – 2019</span>
+        </div>
+        <div class="skills__degree">
+          <strong>B.Sc. Computer Science</strong>
+          <span>Universidad Tecnológica de Chihuahua</span>
+          <span class="skills__year">2011 – 2014</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CONTACT ══════════════════════ -->
+<section class="section contact" id="contact">
+  <p class="section__label reveal-up">06 — Contact</p>
+  <div class="contact__inner">
+    <h2 class="contact__heading reveal-up">
+      Have something<br><em>worth building?</em>
+    </h2>
+    <p class="contact__sub reveal-up">Open to full-time roles, contract work and interesting collaborations.</p>
+    <a class="contact__email reveal-up" href="mailto:dsaldanadev@gmail.com">
+      dsaldanadev@gmail.com
+    </a>
+    <div class="contact__links reveal-up">
+      <a href="mailto:dsaldanadev@gmail.com" class="contact__pill">
+        <span class="contact__pill-icon">✉</span> Email
+      </a>
+      <a href="tel:+526141043811" class="contact__pill">
+        <span class="contact__pill-icon">📞</span> +52 614 104 3811
+      </a>
+      <a href="https://www.linkedin.com/in/danielsaldanagtz" target="_blank" rel="noopener" class="contact__pill">
+        <span class="contact__pill-icon">↗</span> LinkedIn
+      </a>
+      <a href="https://wa.me/526141043811" target="_blank" rel="noopener" class="contact__pill">
+        <span class="contact__pill-icon">↗</span> WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer">
+  <span class="footer__copy">© <span id="yr"></span> Daniel Saldana Gutierrez</span>
+  <span class="footer__mid">Senior Full Stack &amp; AI Engineer</span>
+  <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

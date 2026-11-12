@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.julianozen.com)",
+      "WebFetch(domain:tamalsen.dev)",
+      "WebFetch(domain:www.holdencasey.com)",
+      "WebFetch(domain:jobroadmaps.com)",
+      "WebFetch(domain:muz.li)",
+      "Bash(node --check main.js)",
+      "WebFetch(domain:www.easystreetoffers.com)",
+      "WebFetch(domain:agentiiv.com)",
+      "WebFetch(domain:www.simmie.ai)",
+      "Bash(node --check \"C:/Users/HP/Documents/resume/portfolio/main.js\")"
+    ]
+  }
+}
